@@ -8,9 +8,9 @@ namespace AnimeStreaming
 {
     internal class PositiveCharacter : Character
     {
-        public int PowerLevel;
-        public string IsMainCharacter;
-        public int NumberOfEpisodes;
+        public int powerLevel;
+        public string isMainCharacter;
+        public int numberOfEpisodes;
 
         public PositiveCharacter()
         {
@@ -20,11 +20,25 @@ namespace AnimeStreaming
                                  int powerLevel, string isMainCharacter, int numberOfEpisodes)
             : base(characterID, characterName, animeName)
         {
-            PowerLevel = powerLevel;
-            IsMainCharacter = isMainCharacter;
-            NumberOfEpisodes = numberOfEpisodes;
+            this.powerLevel = PowerLevel;
+            this.isMainCharacter = IsMainCharacter;
+            this.numberOfEpisodes = NumberOfEpisodes;
         }
-
+        public int PowerLevel
+        {
+            get { return powerLevel; }
+            set { powerLevel = value; }
+        }
+        public string IsMainCharacter
+        {
+            get { return isMainCharacter; }
+            set { isMainCharacter = value; }
+        }
+        public int NumberOfEpisodes
+        {
+            get { return numberOfEpisodes; }
+            set { numberOfEpisodes = value; }
+        }
         public override bool CheckPopularity()
         {
             return IsMainCharacter == "Yes" && PowerLevel > 9000 && NumberOfEpisodes > 150;
@@ -33,7 +47,7 @@ namespace AnimeStreaming
         public override void ShowInfo()
         {
             base.ShowInfo();
-            Console.WriteLine("Power Level: " + PowerLevel);
+            Console.WriteLine("Power Level: " + powerLevel);
             Console.WriteLine("Is Main Character: " + IsMainCharacter);
             Console.WriteLine("Number of Episodes: " + NumberOfEpisodes);
             Console.WriteLine("Popularity: " + (CheckPopularity() ? "Popular" : "Not Popular"));
