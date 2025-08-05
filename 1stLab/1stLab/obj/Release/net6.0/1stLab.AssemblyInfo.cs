@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("1stLab")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+136bbb476f754e414f259609b2402cd126b76a1c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7374d7ad5acd649a11af8ffc395331ea32807f60")]
 [assembly: System.Reflection.AssemblyProductAttribute("1stLab")]
 [assembly: System.Reflection.AssemblyTitleAttribute("1stLab")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

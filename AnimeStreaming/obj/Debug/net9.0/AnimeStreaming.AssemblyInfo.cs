@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AnimeStreaming")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e79456b04cdc34a15566330f2bdd4367c64fdbd8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7374d7ad5acd649a11af8ffc395331ea32807f60")]
 [assembly: System.Reflection.AssemblyProductAttribute("AnimeStreaming")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AnimeStreaming")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
