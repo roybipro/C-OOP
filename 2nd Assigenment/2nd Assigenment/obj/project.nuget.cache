@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZLzkKXhuSkLToxrfgZTe3i7BIFgTQBgalAK4bcb90CMq9lM+anemf/LWtgZo2wlMbrtLlwQl+F4hh3bRrOT/Mw==",
+  "success": true,
+  "projectFilePath": "/Users/roybipro/Developer/c#/C-Sharp-Larning/2nd Assigenment/2nd Assigenment/2nd Assigenment.csproj",
+  "expectedPackageFiles": [
+    "/Users/roybipro/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.31/microsoft.aspnetcore.app.ref.6.0.31.nupkg.sha512",
+    "/Users/roybipro/.nuget/packages/microsoft.netcore.app.host.osx-arm64/6.0.31/microsoft.netcore.app.host.osx-arm64.6.0.31.nupkg.sha512",
+    "/Users/roybipro/.nuget/packages/microsoft.netcore.app.ref/6.0.31/microsoft.netcore.app.ref.6.0.31.nupkg.sha512"
+  ],
+  "logs": []
+}
