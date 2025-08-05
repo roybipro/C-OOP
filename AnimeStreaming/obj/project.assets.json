@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rdipt\\OneDrive - American International University-Bangladesh\\OOP\\C-Sharp-Larning\\AnimeStreaming\\AnimeStreaming.csproj",
+      "projectUniqueName": "C:\\Users\\rdipt\\OneDrive - American International University-Bangladesh\\OOPC#\\AnimeStreaming\\AnimeStreaming.csproj",
       "projectName": "AnimeStreaming",
-      "projectPath": "C:\\Users\\rdipt\\OneDrive - American International University-Bangladesh\\OOP\\C-Sharp-Larning\\AnimeStreaming\\AnimeStreaming.csproj",
+      "projectPath": "C:\\Users\\rdipt\\OneDrive - American International University-Bangladesh\\OOPC#\\AnimeStreaming\\AnimeStreaming.csproj",
       "packagesPath": "C:\\Users\\rdipt\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rdipt\\OneDrive - American International University-Bangladesh\\OOP\\C-Sharp-Larning\\AnimeStreaming\\obj\\",
+      "outputPath": "C:\\Users\\rdipt\\OneDrive - American International University-Bangladesh\\OOPC#\\AnimeStreaming\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

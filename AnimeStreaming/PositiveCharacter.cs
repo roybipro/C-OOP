@@ -8,10 +8,14 @@ namespace AnimeStreaming
 {
     internal class PositiveCharacter : Character
     {
-        public int PowerLevel { get; set; }
-        public string IsMainCharacter { get; set; } // "Yes" or "No"
-        public int NumberOfEpisodes { get; set; }
+        public int PowerLevel;
+        public string IsMainCharacter;
+        public int NumberOfEpisodes;
 
+        public PositiveCharacter()
+        {
+            
+        }
         public PositiveCharacter(string characterID, string characterName, string animeName,
                                  int powerLevel, string isMainCharacter, int numberOfEpisodes)
             : base(characterID, characterName, animeName)
