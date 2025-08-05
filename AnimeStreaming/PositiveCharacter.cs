@@ -8,9 +8,9 @@ namespace AnimeStreaming
 {
     internal class PositiveCharacter : Character
     {
-        public int powerLevel;
-        public string isMainCharacter;
-        public int numberOfEpisodes;
+        int powerLevel;
+        string isMainCharacter;
+        int numberOfEpisodes;
 
         public PositiveCharacter()
         {
@@ -47,7 +47,7 @@ namespace AnimeStreaming
         public override void ShowInfo()
         {
             base.ShowInfo();
-            Console.WriteLine("Power Level: " + powerLevel);
+            Console.WriteLine("Power Level: " + PowerLevel);
             Console.WriteLine("Is Main Character: " + IsMainCharacter);
             Console.WriteLine("Number of Episodes: " + NumberOfEpisodes);
             Console.WriteLine("Popularity: " + (CheckPopularity() ? "Popular" : "Not Popular"));
