@@ -22,19 +22,19 @@ namespace AnimeStreaming
         public int PowerLevel
         {
             get { return powerLevel; }
-            set { powerLevel = value; }
+            set { this.powerLevel = value; }
         }
 
         public string IsMainCharacter
         {
             get { return isMainCharacter; }
-            set { isMainCharacter = value; }
+            set { this.isMainCharacter = value; }
         }
 
         public int NumberOfEpisodes
         {
             get { return numberOfEpisodes; }
-            set { numberOfEpisodes = value; }
+            set { this.numberOfEpisodes = value; }
         }
 
         public override bool CheckPopularity()
@@ -45,11 +45,12 @@ namespace AnimeStreaming
         public override void ShowInfo()
         {
             base.ShowInfo();
-            Console.WriteLine("Power Level: " + PowerLevel);
-            Console.WriteLine("Is Main Character: " + IsMainCharacter);
-            Console.WriteLine("Number of Episodes: " + NumberOfEpisodes);
+            Console.WriteLine("Power Level: " + powerLevel);
+            Console.WriteLine("Is Main Character: " + isMainCharacter);
+            Console.WriteLine("Number of Episodes: " + numberOfEpisodes);
             Console.WriteLine("Popularity: " + (CheckPopularity() ? "Popular" : "Not Popular"));
         }
     }
 }
+
 
