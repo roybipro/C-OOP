@@ -2,54 +2,6 @@ using System;
 
 namespace AnimeStreaming
 {
-    // Base Character class
-    internal class Character
-    {
-        private string characterID;
-        private string characterName;
-        private string animeName;
-
-        public Character() { }
-
-        public Character(string characterID, string characterName, string animeName)
-        {
-            this.CharacterID = characterID;
-            this.CharacterName = characterName;
-            this.AnimeName = animeName;
-        }
-
-        public string CharacterID
-        {
-            get { return characterID; }
-            set { characterID = value; }
-        }
-
-        public string CharacterName
-        {
-            get { return characterName; }
-            set { characterName = value; }
-        }
-
-        public string AnimeName
-        {
-            get { return animeName; }
-            set { animeName = value; }
-        }
-
-        public virtual void ShowInfo()
-        {
-            Console.WriteLine("Character ID: " + CharacterID);
-            Console.WriteLine("Character Name: " + CharacterName);
-            Console.WriteLine("Anime Name: " + AnimeName);
-        }
-
-        public virtual bool CheckPopularity()
-        {
-            return false;
-        }
-    }
-
-    // Derived PositiveCharacter class
     internal class PositiveCharacter : Character
     {
         private int powerLevel;
@@ -62,9 +14,9 @@ namespace AnimeStreaming
                                  int powerLevel, string isMainCharacter, int numberOfEpisodes)
             : base(characterID, characterName, animeName)
         {
-            this.PowerLevel = powerLevel;
-            this.IsMainCharacter = isMainCharacter;
-            this.NumberOfEpisodes = numberOfEpisodes;
+            this.powerLevel = powerLevel;
+            this.isMainCharacter = isMainCharacter;
+            this.numberOfEpisodes = numberOfEpisodes;
         }
 
         public int PowerLevel
@@ -99,14 +51,5 @@ namespace AnimeStreaming
             Console.WriteLine("Popularity: " + (CheckPopularity() ? "Popular" : "Not Popular"));
         }
     }
-
-    // Example usage
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            PositiveCharacter pc = new PositiveCharacter("C001", "Naruto Uzumaki", "Naruto", 9500, "Yes", 220);
-            pc.ShowInfo();
-        }
-    }
 }
+
