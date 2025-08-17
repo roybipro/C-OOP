@@ -52,23 +52,18 @@ class Program
 /*
 using System;
 
-class Program
+class NumberPattern
 {
     static void Main()
     {
-        int evenSum = 0;
-        int oddSum = 0;
-
-        for (int i = 1; i <= 100; i++)
+        for (int i = 1; i <= 5; i++) // Rows
         {
-            if (i % 2 == 0) // even number
-                evenSum += i;
-            else            // odd number
-                oddSum += i;
+            for (int j = i; j < i + 5; j++) // Columns
+            {
+                Console.Write(j);
+            }
+            Console.WriteLine(); // Move to next line
         }
-
-        Console.WriteLine("Sum of even numbers from 1 to 100: " + evenSum);
-        Console.WriteLine("Sum of odd numbers from 1 to 100: " + oddSum);
     }
 }
 */
