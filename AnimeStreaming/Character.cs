@@ -20,19 +20,19 @@ namespace AnimeStreaming
         public string ID
         {
             get { return characterID; }
-            set { characterID = value; }
+            set { this.characterID = value; }
         }
 
         public string Name
         {
             get { return characterName; }
-            set { characterName = value; }
+            set { this.characterName = value; }
         }
 
         public string AName
         {
             get { return animeName; }
-            set { animeName = value; }
+            set { this.animeName = value; }
         }
 
         public virtual void ShowInfo()
@@ -49,4 +49,5 @@ namespace AnimeStreaming
     }
 
 }
+
 
