@@ -17,19 +17,19 @@ namespace AnimeStreaming
             this.animeName = animeName;
         }
 
-        public string ID
+        public string CharacterID
         {
             get { return characterID; }
             set { this.characterID = value; }
         }
 
-        public string Name
+        public string CharacterName
         {
             get { return characterName; }
             set { this.characterName = value; }
         }
 
-        public string AName
+        public string AnimeName
         {
             get { return animeName; }
             set { this.animeName = value; }
@@ -37,9 +37,9 @@ namespace AnimeStreaming
 
         public virtual void ShowInfo()
         {
-            Console.WriteLine("Character ID: " + ID);
-            Console.WriteLine("Character Name: " + Name);
-            Console.WriteLine("Anime Name: " + AName);
+            Console.WriteLine("Character ID: " + characterID);
+            Console.WriteLine("Character Name: " + characterName);
+            Console.WriteLine("Anime Name: " + animeName);
         }
 
         public virtual bool CheckPopularity()
@@ -49,5 +49,6 @@ namespace AnimeStreaming
     }
 
 }
+
 
 
