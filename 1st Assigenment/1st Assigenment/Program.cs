@@ -58,7 +58,7 @@ class Program
             Console.WriteLine(c + " < " + d);
 
         }
-        else if (c > d)
+        else (c > d)
         {
             Console.WriteLine(c + " > " + d);
 
