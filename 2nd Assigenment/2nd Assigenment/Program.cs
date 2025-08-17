@@ -50,21 +50,25 @@ class Program
 
 //3
 /*
+using System;
+
 class Program
 {
-
-    static void Main(string[] args)
+    static void Main()
     {
-       for(int i = 0; i < 5; i++)
+        int evenSum = 0;
+        int oddSum = 0;
+
+        for (int i = 1; i <= 100; i++)
         {
-            
-            for(int j = 1; j <= 5; j++)
-            {
-                Console.Write(i+j);
-                
-            }
-            Console.WriteLine();
+            if (i % 2 == 0) // even number
+                evenSum += i;
+            else            // odd number
+                oddSum += i;
         }
+
+        Console.WriteLine("Sum of even numbers from 1 to 100: " + evenSum);
+        Console.WriteLine("Sum of odd numbers from 1 to 100: " + oddSum);
     }
 }
 */
