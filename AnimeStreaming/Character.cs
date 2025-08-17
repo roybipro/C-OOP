@@ -1,53 +1,55 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AnimeStreaming
 {
     internal class Character
     {
-        public string characterID;
-        public string characterName;
-        public string animeName;
+        private string characterID;
+        private string characterName;
+        private string animeName;
 
-        public Character()
-        {
+        // Default constructor
+        public Character() { }
 
-        }
+        // Parameterized constructor
         public Character(string characterID, string characterName, string animeName)
         {
-            this.characterID = ID;
-            this.characterName = Name;
-            this.animeName = AName;
+            this.characterID = characterID;
+            this.characterName = characterName;
+            this.animeName = animeName;
         }
-         public string ID
+
+        // Properties
+        public string CharacterID
         {
             get { return characterID; }
             set { characterID = value; }
         }
-        public string Name
+
+        public string CharacterName
         {
             get { return characterName; }
             set { characterName = value; }
         }
-        public string AName
+
+        public string AnimeName
         {
             get { return animeName; }
             set { animeName = value; }
         }
-        public virtual void ShowInfo()
+
+        // Methods
+        public void ShowInfo()
         {
-            Console.WriteLine("Character ID: " + ID);
-            Console.WriteLine("Character Name: " + Name);
-            Console.WriteLine("Anime Name: " + AName);
+            Console.WriteLine("Character ID: " + CharacterID);
+            Console.WriteLine("Character Name: " + CharacterName);
+            Console.WriteLine("Anime Name: " + AnimeName);
         }
 
-        public virtual bool CheckPopularity()
+        public bool CheckPopularity()
         {
+            // You can later override this in a derived class
             return false;
         }
     }
 }
-
