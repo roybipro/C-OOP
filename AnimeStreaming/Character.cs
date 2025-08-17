@@ -8,10 +8,8 @@ namespace AnimeStreaming
         private string characterName;
         private string animeName;
 
-        // Default constructor
         public Character() { }
 
-        // Parameterized constructor
         public Character(string characterID, string characterName, string animeName)
         {
             this.characterID = characterID;
@@ -19,37 +17,36 @@ namespace AnimeStreaming
             this.animeName = animeName;
         }
 
-        // Properties
-        public string CharacterID
+        public string ID
         {
             get { return characterID; }
             set { characterID = value; }
         }
 
-        public string CharacterName
+        public string Name
         {
             get { return characterName; }
             set { characterName = value; }
         }
 
-        public string AnimeName
+        public string AName
         {
             get { return animeName; }
             set { animeName = value; }
         }
 
-        // Methods
-        public void ShowInfo()
+        public virtual void ShowInfo()
         {
-            Console.WriteLine("Character ID: " + CharacterID);
-            Console.WriteLine("Character Name: " + CharacterName);
-            Console.WriteLine("Anime Name: " + AnimeName);
+            Console.WriteLine("Character ID: " + ID);
+            Console.WriteLine("Character Name: " + Name);
+            Console.WriteLine("Anime Name: " + AName);
         }
 
-        public bool CheckPopularity()
+        public virtual bool CheckPopularity()
         {
-            // You can later override this in a derived class
             return false;
         }
     }
+
 }
+
